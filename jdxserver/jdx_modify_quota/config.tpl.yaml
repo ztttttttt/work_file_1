@@ -1,0 +1,27 @@
+queue_server:
+    host: {{queue_account.host}}
+    access_id: {{queue_account.access_id}}
+    access_key: {{queue_account.access_key}}
+    name: {{queue_name.jdx_modify_quota}}
+    idle_seconds: {{queue_server.idle_seconds}}
+
+queue_flow:
+    name: {{queue_name.jdcl_flow}}
+
+mysql_jd_cl:
+    host: {{mysql_ml_jdcl.server}}
+    port: {{mysql_ml_jdcl.port}}
+    user: {{mysql_ml_jdcl.user}}
+    pw: {{mysql_ml_jdcl.password}}
+    db: {{mysql_ml_jdcl.database}}
+
+mongo_jd_cl:
+    host: {{mongo_jdcl.server}}
+    user: {{mongo_jdcl.user}}
+    pw: {{mongo_jdcl.password}}
+    db: {{mongo_jdcl.database}}
+
+dingding:
+    robots: {{dingding.robots}}
+
+env: {{env}}

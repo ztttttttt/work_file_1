@@ -1,0 +1,24 @@
+queue_server:
+    host: {{queue_account.host}}
+    access_id: {{queue_account.access_id}}
+    access_key: {{queue_account.access_key}}
+    name: {{queue_name.ml_graph}}
+    idle_seconds: {{queue_server.idle_seconds}}
+
+# queue_flow:   # backque
+#     name: {{queue_name.jdcl_flow}}
+
+mysql_graph:
+    host: {{mysql_corvus.server}}
+    port: {{mysql_corvus.port}}
+    user: {{mysql_corvus.user}}
+    pw: {{mysql_corvus.password}}
+    db: {{mysql_corvus.database}}
+
+graph_min_vertices_cnt: 2
+graph_uri: "jdx_graph.p"
+
+dingding:
+    robots: {{dingding.robots}}
+
+env: {{env}}

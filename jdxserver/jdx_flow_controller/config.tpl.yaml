@@ -1,0 +1,35 @@
+queue_server:
+    host: {{queue_account.host}}
+    access_id: {{queue_account.access_id}}
+    access_key: {{queue_account.access_key}}
+    name: {{queue_name.jdcl_flow}}
+    idle_seconds: {{queue_server.idle_seconds}}
+    processes: 1
+mongo_mbd:
+    host: {{mongo_mbd.server}}
+    user: {{mongo_mbd.user}}
+    pw: {{mongo_mbd.password}}
+    db: {{mongo_mbd.database}}
+    collection: "jd_cl_flow"
+
+zookeeper:
+    host: {{zookeeper.host}}
+    root_path: "/machinelearning/jdx"
+
+queue:
+    ruler: {{queue_name.jdcl_rule_check}}
+    judger: {{queue_name.jdcl_judger}}
+    worker: {{queue_name.jdcl_worker}}
+    category: {{queue_name.jdx_category}}
+    final_result: {{queue_name.jdcl_result}}
+    model: {{queue_name.jdcl_model}}
+    withdraw_model: {{queue_name.jdcl_withdraw_model}}
+    credit: {{queue_name.jdx_credit}}
+    graph: {{queue_name.jdx_graph}}
+    quota_model: {{queue_name.jdx_quota_model}}
+    modify_quota: {{queue_name.jdx_modify_quota}}
+
+dingding:
+    robots: {{dingding.robots}}
+
+env: {{env}}
